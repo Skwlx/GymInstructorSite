@@ -1,0 +1,39 @@
+.jumbotron{
+    min-height: 100vh;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: "";
+    background: url("../images/jumbo.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.jumbotron-content{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h3{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 3rem;
+    }
+    h3,p{
+        text-shadow: 1px 1px 5px white;
+        opacity: 1;
+    }
+}

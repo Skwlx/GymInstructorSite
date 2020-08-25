@@ -11,9 +11,7 @@ import headerStyles from "./header.module.scss";
 const Header = () => {
     return(
         <header className={headerStyles.header}>
-        <span>
         <Link to="/" className={headerStyles.title}>Sebastian Zielonka</Link>
-        </span>
             <nav>
                 <ul className={headerStyles.navList}>
                     <li>
