@@ -5,6 +5,7 @@ import {
     faFacebook
 } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet";
 
 import Logo from "../images/logoS.png";
 
@@ -13,6 +14,11 @@ import headerStyles from "./header.module.scss";
 const Header = () => {
     return(
         <header className={headerStyles.header}>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Sebastian Zielonka | Trener Online</title>
+            <meta name="description" content="Nazywam się Sebastian Zielonka, jestem trenerem Online." />
+        </Helmet>
         <Link to="/"><img src={Logo}  className={headerStyles.title} alt="Logo"></img></Link>
             <nav>
                 <ul className={headerStyles.navList}>
