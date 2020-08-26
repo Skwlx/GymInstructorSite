@@ -1,6 +1,23 @@
+//INDEX ANIMATIONS
+
+@keyframes displayIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+//INDEX STYLES
 .jumbotron{
     min-height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .jumbotron::after {
@@ -22,10 +39,7 @@
     width: 100%;
     height: 30%;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    animation: displayIn 1.5s ease-out;
     h3{
         font-size: 4rem;
     }
