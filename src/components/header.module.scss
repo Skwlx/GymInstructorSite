@@ -25,6 +25,30 @@
     z-index: 2;
 }
 
+.logo-container{
+    display: flex;
+}
+
+.header-social-media{
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    margin-top: -5px;
+    li{
+        margin-right: .6rem;
+        margin-left: .6rem;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        transition: ease .2s;
+        &:hover{
+            color:#a3867f;
+        }
+    }
+}
+
+
 .title{
     margin: 0;
     width: 200px;
@@ -36,7 +60,6 @@
 .nav-list{
     display:flex;
     list-style-type: none;
-    margin: auto 8.5rem auto 0;
     li{
         margin: 0;
     }
@@ -71,23 +94,4 @@
 
 .active-nav-item{
     color:#ffffff;
-}
-
-.header-social-media{
-    display:flex;
-    list-style-type: none;
-    margin: 0;
-    margin-top: -5px;
-    li{
-        margin-right: .6rem;
-        margin-left: .6rem;
-    }
-    a{
-        text-decoration: none;
-        color: #000000;
-        transition: ease .2s;
-        &:hover{
-            color:#a3867f;
-        }
-    }
 }

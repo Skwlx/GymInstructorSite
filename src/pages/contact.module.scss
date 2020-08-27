@@ -1,0 +1,45 @@
+//IMPORTS
+
+@import '../styles/variables.scss';
+
+
+//CONTACT STYLES
+
+.contact-container{
+    background-color: lighten(#666666, 20%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    background-color: $base-color;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #000000;
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list-element{
+    display: flex;
+    align-items: center;
+    span{
+        margin-left: 30px;
+        border-bottom: 3px solid #ffffff;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    a{
+        color: #000000;
+        transition: ease .2s;
+        &:hover{
+            color:#a3867f;
+        }
+    }
+}
