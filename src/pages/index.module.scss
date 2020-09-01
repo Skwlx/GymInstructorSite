@@ -1,3 +1,7 @@
+//IMPORT
+
+@import '../styles/variables.scss';
+
 //INDEX ANIMATIONS
 
 @keyframes displayIn {
@@ -12,6 +16,9 @@
 }
 
 //INDEX STYLES
+
+//JUMBOTRON
+
 .jumbotron{
     min-height: 100vh;
     position: relative;
@@ -22,7 +29,7 @@
 
 .jumbotron::after {
     content: "";
-    background: url("../images/jumbo.jpg");
+    //background: url("../images/jumbo.jpg");
     opacity: 0.6;
     background-size: cover;
     background-attachment: fixed;
@@ -49,5 +56,47 @@
     h3,p{
         text-shadow: 1px 1px 5px white;
         opacity: 1;
+    }
+}
+
+//ABOUT ME
+
+.about-me-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-me-content{
+    background-color: $base-color;
+    min-width: 650px;
+    max-width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.about-me-photo{
+    margin: 20px;
+    margin-right: 0;
+    min-width: 550px;
+    min-height: 735px;
+    max-width: 40%;
+    max-height: 60%;
+    border-radius: 10px;
+    img{
+        margin: 0;
+        border: 6px solid $base-color;
+        border-radius: 10px;
     }
 }
