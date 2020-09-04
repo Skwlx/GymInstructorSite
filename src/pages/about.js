@@ -6,7 +6,7 @@ const About = () =>{
   <div>
     <Layout>
       <div>
-    about
+        about
       </div>
     </Layout>
   </div>

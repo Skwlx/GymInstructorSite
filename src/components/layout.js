@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 import Header from "./header";
 import Footer from "./footer";
 
-import layoutStyles from "./layout.module.scss";
-import "../styles/index.scss";
+import layoutStyles from "../styles/componentsStyles/layout.module.scss";
+import "../styles//index.scss";
 
 AOS.init({once: true})
 

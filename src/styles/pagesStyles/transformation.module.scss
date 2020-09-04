@@ -1,0 +1,31 @@
+// VARIABLES 
+
+@import '../variables.scss';
+
+// TRANSFORMATION STYLES
+
+.transformation-box {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transformation-content-image {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.transformation-content {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+
+.transformation-content-text{
+    color: blue;
+}

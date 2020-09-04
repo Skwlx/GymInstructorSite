@@ -9,7 +9,7 @@ import {
     faPhoneAlt,
     faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
-import contactStyles from "./contact.module.scss"
+import contactStyles from "../styles/pagesStyles/contact.module.scss"
 
 const Contact = () =>{
   return (

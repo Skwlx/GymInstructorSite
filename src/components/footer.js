@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby"
 
-import footerStyles from "./footer.module.scss"
+import footerStyles from "../styles/componentsStyles/footer.module.scss"
 
 const Footer = () =>{
   return (

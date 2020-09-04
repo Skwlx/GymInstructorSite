@@ -2,25 +2,30 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import Marked from "marked"
-import SanitizeHtml from "sanitize-html";
+
+import tranasformationStyles from '../styles/pagesStyles/transformation.module.scss'
 
 const Transformation = () => {
+  let showdown  = require('showdown');
+  let converter = new showdown.Converter();
   const data = useStaticQuery(graphql`
   query MyQuery {
     allStrapiArticle {
       edges {
         node {
           title
-          content
+          afterContent
+          beforeContent
           image {
+            id
             childImageSharp {
-              fixed(width: 400) {
-                  base64
-                  width
-                  height
-                  src
-                  srcSet
+              fluid {
+                base64
+                tracedSVG
+                srcWebp
+                srcSetWebp
+                originalImg
+                originalName
               }
             }
           }
@@ -30,21 +35,26 @@ const Transformation = () => {
   }`)
 
   return (
-  <div>
     <Layout>
-      <div>
+      <div className={tranasformationStyles.transformationBox}>
         {data.allStrapiArticle.edges.map(edge =>{
           return (
             <div>
             <h1>{edge.node.title}</h1>
-            <p>{Marked(edge.node.content)}</p>
-            <Img fixed={edge.node.image.childImageSharp.fixed}></Img>
+            <Img 
+            fluid={edge.node.image.childImageSharp.fluid} 
+            className={tranasformationStyles.transformationContentImage} 
+            key={edge.node.image.id} 
+            />
+              <div className={tranasformationStyles.transformationContent}>
+              <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(edge.node.beforeContent) }}></div>
+              <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(edge.node.afterContent) }}></div>
+              </div>
             </div>
           )
         })}
       </div>
     </Layout>
-  </div>
   )
 }
 

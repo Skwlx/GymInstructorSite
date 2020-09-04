@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 
 import Logo from "../images/logoS.png";
 
-import headerStyles from "./header.module.scss";
+import headerStyles from "../styles/componentsStyles/header.module.scss";
 
 const Header = () => {
     return(

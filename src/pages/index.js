@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import indexStyles from "./index.module.scss";
+import indexStyles from "../styles/pagesStyles/index.module.scss";
 
 import PhotoOfMe from "../images/Me.jpg"
 
@@ -28,7 +28,7 @@ const IndexPage = () =>{
         gdzie uczę z reguły osoby początkujące podstaw treningu siłowego.
         Część z was może mnie kojarzyć z social mediów,
         na których w prosty sposób staram się przekazywać wiedzę na temat dietetyki oraz treningu siłowego.
-        <p>Tematem treningów oraz żywienia zacząłem interesować się już w 2012r.
+        </p>Tematem treningów oraz żywienia zacząłem interesować się już w 2012r.
         Od tamtego czasu stało się to moją pasją i postanowiłem rozwijać się w tym kierunku.
         Prowadzę ludzi online już od ok. 4 lat, dzięki temu nabrałem już bardzo dużo doświadczenia.
         Poza licznymi certyfikatami oraz zdobytym doświadczeniem posiadam dużą wiedzę,
@@ -37,7 +37,7 @@ const IndexPage = () =>{
         poza tym oferuję stały kontakt oraz naukę zdrowych nawyków żywieniowych,
         co gwarantuje brak efektu jojo. Pomagam ludziom w osiągnięciu wymarzonej sylwetki,    
         bez zbędnych restrykcji i pokazuję, że można jeść to na co ma się ochotę, to co się lubi, a przy tym mieć zadowalające efekty.
-        </p>
+        <p>
         Moim głównym celem jest uświadomienie ludzi, że można jeść zwyczajnie, spotykać się ze znajomymi, wychodzić na imprezy, 
         a przy tym wszystkim cieszyć się dobrym zdrowiem, samopoczuciem i piękną sylwetką.
         </p>
