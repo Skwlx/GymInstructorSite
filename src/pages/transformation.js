@@ -17,7 +17,7 @@ const Transformation = () => {
           afterContent
           beforeContent
           image {
-            id
+            name
             childImageSharp {
               fluid {
                 base64
@@ -34,17 +34,23 @@ const Transformation = () => {
     }
   }`)
 
+  if(data.allStrapiArticle === null || data.allStrapiArticle === undefined){
+    console.log("Blad");
+  }
+
+
   return (
     <Layout>
       <div className={tranasformationStyles.transformationBox}>
         {data.allStrapiArticle.edges.map(edge =>{
           return (
-            <div className={tranasformationStyles.transformationContent}>
+            <div className={tranasformationStyles.transformationContent} key={edge.node.title}>
             <h2 className={tranasformationStyles.transformationContentTitle}>{edge.node.title}</h2>
             <Img 
+            key={edge.node.image.name} 
             fluid={edge.node.image.childImageSharp.fluid} 
-            className={tranasformationStyles.transformationContentImage} 
-            key={edge.node.image.id} 
+            className={tranasformationStyles.transformationContentImage}
+            alt={edge.node.title} 
             />
               <div className={tranasformationStyles.transformationContentBox}>
               <div 
@@ -61,6 +67,7 @@ const Transformation = () => {
         })}
       </div>
     </Layout>
+    
   )
 }
 

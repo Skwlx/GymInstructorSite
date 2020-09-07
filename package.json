@@ -3,7 +3,7 @@
   "private": true,
   "description": "Website created for Sebastian Zielonka",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "ISC",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
