@@ -3,6 +3,35 @@
 @import '../variables.scss';
 
 
+@keyframes displayScale {
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes underLine {
+    0%{
+        transform: translateY(-10px);
+        border-bottom-color: $base-color;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate{
+    animation: displayScale 0.8s ease-in-out forwards;
+    span{
+        animation: underLine 0.7s .8s ease-in-out forwards;
+    }
+}
+
 //CONTACT STYLES
 
 .contact-container{
@@ -29,11 +58,13 @@
 .contact-list-element{
     display: flex;
     align-items: center;
+    opacity: 0;
     span{
         margin-left: 30px;
         border-bottom: 3px solid #ffffff;
         font-weight: 500;
         font-size: 1.1rem;
+        opacity: 0;
     }
     .broken-span{
         margin-left: 36px;

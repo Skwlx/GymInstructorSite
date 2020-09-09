@@ -29,7 +29,7 @@
 
 .jumbotron::after {
     content: "";
-    background: url("../../images/jumbo.jpg");
+    //background: url("../../images/jumbo.jpg");
     opacity: 0.6;
     background-size: cover;
     background-attachment: fixed;
@@ -94,6 +94,7 @@
     max-width: 40%;
     max-height: 60%;
     border-radius: 10px;
+    box-shadow: -20px -15px darken($base-color,30%);
     img{
         margin: 0;
         border: 6px solid $base-color;

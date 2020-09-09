@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -12,6 +12,16 @@ import {
 import contactStyles from "../styles/pagesStyles/contact.module.scss"
 
 const Contact = () =>{
+
+  useEffect(() => {
+    let letters = document.querySelectorAll(`.${contactStyles.contactListElement}`);
+    [...letters].map((el, i) =>{
+      setTimeout(() => {
+        el.classList.add(contactStyles.animate);
+      }, i * 350);
+    });
+  });
+
   return (
   <div>
     <Layout>
@@ -48,6 +58,7 @@ const Contact = () =>{
       </div>
     </Layout>
   </div>
+  
   )
 }
 
