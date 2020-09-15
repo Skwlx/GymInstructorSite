@@ -2,6 +2,8 @@
 
 @import '../variables.scss';
 
+// CONTACT ANIMATIONS 
+
 
 @keyframes displayScale {
     0%{
@@ -24,7 +26,6 @@
     }
 }
 
-
 .animate{
     animation: displayScale 0.8s ease-in-out forwards;
     span{
@@ -35,7 +36,7 @@
 //CONTACT STYLES
 
 .contact-container{
-    background-color: lighten(#666666, 20%);
+    background-color: lighten($base-color, 34%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -43,10 +44,9 @@
 }
 
 .contact-content{
-    background-color: $base-color;
+    background-color: lighten($base-color, 30%);
     padding: 2rem;
     border-radius: 20px;
-    border: 2px solid #000000;
 }
 
 .contact-list{
@@ -73,7 +73,18 @@
         color: #000000;
         transition: ease .2s;
         &:hover{
-            color:#a3867f;
+            color:$secondary-color;
+        }
+    }
+}
+
+//CONTACT MEDIA QUERIES
+
+@media (max-width:830px){
+    .contact-content{
+        background-color: lighten($base-color, 34%);
+        h2{
+            font-size: 1.5rem;
         }
     }
 }

@@ -36,7 +36,7 @@ const Contact = () =>{
             <span>Napisz wiadomość przez Facebook'a.</span>
             </li>
             <li className={contactStyles.contactListElement}>
-              <a aria-label="link" target="_blank" rel="noreferrer" href="https://www.instagram.com/sebastian__zielonka/?fbclid=IwAR3EAr29t_51d_TWlKWsP5hy7Wz_-7_8RVN_OutZw3f0FzcdRXeA33twVZk">
+              <a aria-label="link" target="_blank" rel="noreferrer" href="https://www.instagram.com/zielony_trener/">
                 <FontAwesomeIcon icon={faInstagram} size="3x"/>
               </a>
               <span className={contactStyles.brokenSpan}>Zajrzyj na Instagrama.</span>
@@ -45,13 +45,13 @@ const Contact = () =>{
               <a href="tel:+48 534 304 262">
                 <FontAwesomeIcon icon={faPhoneAlt} size="3x"/>
               </a>
-              <span>Zadzwoń.</span>
+              <span>Zadzwoń (+48 534 304 262).</span>
             </li>
             <li className={contactStyles.contactListElement}>
               <a href="mailto:sebastianzielonka32@gmail.com" aria-label="Wyslij email">
                 <FontAwesomeIcon icon={faEnvelope} size="3x"/>
               </a>
-              <span>Wyślij E-maila.</span>
+              <span>Wyślij maila (sebastianzielonka32@gmail.com).</span>
             </li>
             </ul>
         </div>

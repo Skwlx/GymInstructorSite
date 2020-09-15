@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -8,9 +8,11 @@ import Footer from "./footer";
 import layoutStyles from "../styles/componentsStyles/layout.module.scss";
 import "../styles//index.scss";
 
-AOS.init({once: true})
 
 const Layout = (props) => {
+    useEffect(() => {
+        AOS.init({once: true})
+    })
     return(
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>

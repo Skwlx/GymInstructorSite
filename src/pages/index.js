@@ -17,11 +17,10 @@ const IndexPage = () =>{
         </div>
       </div>
       <div className={indexStyles.aboutMeContainer}>
-      <div className={indexStyles.aboutMePhoto} data-aos="fade-right">
-        <img src={PhotoOfMe} alt="About Me"></img>
-      </div>
-        <div className={indexStyles.aboutMeContent} data-aos="fade-left">
-        <h3>O mnie</h3>
+        <div className={indexStyles.aboutMeContent} data-aos="fade-up">
+        <h2 className={indexStyles.aboutMeContentTitle}>O mnie</h2>
+        <img className={indexStyles.aboutMePhoto} src={PhotoOfMe} alt="About Me"></img>
+        <div className={indexStyles.aboutMeContentText}>
         <p>
         Cześć, nazywam się Sebastian i jestem Trenerem Online. 
         Studiuję dietetykę oraz prowadzę treningi personalne, 
@@ -33,14 +32,15 @@ const IndexPage = () =>{
         Prowadzę ludzi online już od ok. 4 lat, dzięki temu nabrałem już bardzo dużo doświadczenia.
         Poza licznymi certyfikatami oraz zdobytym doświadczeniem posiadam dużą wiedzę,
         którą ciągle poszerzam, co przekłada się na lepszą współpracę z moimi podopiecznymi.
+        <p><br/>
         Wszystkie plany treningowe oraz diety dobieram indywidualnie do możliwości podopiecznych,
         poza tym oferuję stały kontakt oraz naukę zdrowych nawyków żywieniowych,
         co gwarantuje brak efektu jojo. Pomagam ludziom w osiągnięciu wymarzonej sylwetki,    
         bez zbędnych restrykcji i pokazuję, że można jeść to na co ma się ochotę, to co się lubi, a przy tym mieć zadowalające efekty.
-        <p>
         Moim głównym celem jest uświadomienie ludzi, że można jeść zwyczajnie, spotykać się ze znajomymi, wychodzić na imprezy, 
         a przy tym wszystkim cieszyć się dobrym zdrowiem, samopoczuciem i piękną sylwetką.
         </p>
+        </div>
         </div>
       </div>
     </Layout>

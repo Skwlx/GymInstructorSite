@@ -5,7 +5,7 @@
 //FOOTER STYLES
 
 .footer{
-    background-color: $base-color;
+    background-color: lighten($base-color, 20%);
     padding-top: 2rem;
 }
 
@@ -42,10 +42,25 @@
     text-decoration: none;
     transition: ease .2s;
     &:hover{
-        color:#a3867f;
+        color:#ffffff;
     }
 }
 
 .footerCopy{
     margin-top: .5rem;
+}
+
+//FOOTER MEDIA QUERIES 
+
+@media (max-width:830px){
+    .footer-title{
+        font-size: 1.1rem;
+    }
+    .footer-social{
+        font-size: 0.8rem;
+    }
+
+    .footerCopy{
+        font-size: 0.8rem;
+    }
 }

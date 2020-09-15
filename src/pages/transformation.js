@@ -44,7 +44,7 @@ const Transformation = () => {
       <div className={tranasformationStyles.transformationBox}>
         {data.allStrapiArticle.edges.map(edge =>{
           return (
-            <div className={tranasformationStyles.transformationContent} key={edge.node.title}>
+            <div className={tranasformationStyles.transformationContent} key={edge.node.title} data-aos="fade-up">
             <h2 className={tranasformationStyles.transformationContentTitle}>{edge.node.title}</h2>
             <Img 
             key={edge.node.image.name} 
@@ -53,11 +53,11 @@ const Transformation = () => {
             alt={edge.node.title} 
             />
               <div className={tranasformationStyles.transformationContentBox}>
-              <div 
+              <div data-aos="fade-right"
               className={tranasformationStyles.transformationContentBoxText}
               dangerouslySetInnerHTML={{ __html: converter.makeHtml(edge.node.beforeContent)}}>
                 </div>
-              <div 
+              <div data-aos="fade-left"
               className={tranasformationStyles.transformationContentBoxText}
               dangerouslySetInnerHTML={{ __html: converter.makeHtml(edge.node.afterContent)}}>
                 </div>
