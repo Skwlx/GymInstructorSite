@@ -63,14 +63,14 @@
         margin-left: 30px;
         border-bottom: 3px solid #ffffff;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         opacity: 0;
     }
     .broken-span{
         margin-left: 36px;
     }
     a{
-        color: #000000;
+        color: lighten($base-color, 6%);
         transition: ease .2s;
         &:hover{
             color:$secondary-color;
@@ -85,6 +85,16 @@
         background-color: lighten($base-color, 34%);
         h2{
             font-size: 1.5rem;
+            text-align: center;
         }
+    }
+}
+
+@media(max-width:435px){
+    .contact-content{
+        padding: 0;
+    }
+    .contact-list-element{
+        font-size: 14px;
     }
 }

@@ -7,10 +7,11 @@
 .transformation-box {
     background-color: lighten($base-color, 34%);
     display: flex;
-    padding-top: 70px;
+    padding-top: 60px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .transformation-content {
@@ -30,8 +31,8 @@
     margin-left: 20px;
 }
 
-.transformation-content-image {
-    width: 600px;
+.transformation-content-image{
+    width: 500px;
     height: 600px;
     margin: auto;
     border-radius: 10px;
@@ -49,7 +50,7 @@
     padding: 50px;
     padding-bottom: 0;
     p{
-        border-bottom: 2px solid $base-color;
+        border-bottom: 4px double $base-color;
         padding-bottom: 3px;
     }
     h1,h2,h3,h4,h5{
@@ -57,3 +58,21 @@
         padding-bottom: 5px;
     }
 }
+
+@media (max-width:830px){
+    .transformation-content-image{
+        width: 450px;
+        height: 550px;
+    }
+}
+
+@media(max-width:435px){
+    .transformation-content-image{
+        width: 350px;
+        height: 450px;
+    }
+    .transformation-content-box-text{
+        padding: 20px;
+    }
+}
+
