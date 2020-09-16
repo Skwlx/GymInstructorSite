@@ -1,0 +1,65 @@
+//JUMBOTRON ANIMATIONS
+
+@keyframes displayIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+//JUMBOTRON
+
+.jumbotron{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron::after {
+    content: "";
+    background: url("../../images/jumbo4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.jumbotron-content{
+    height: 30%;
+    text-align: center;
+    animation: displayIn 1.5s ease-out;
+    margin: auto;
+    //background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    h3{
+        font-size: 4em;
+    }
+    p{
+        font-size: 3em;
+    }
+}
+
+//JUMBOTRON MEDIA QUERIES
+@media (max-width:830px){
+    .jumbotron-content{
+       font-size: .6em;
+    }
+}
+
+@media(max-width:435px){
+    .jumbotron-content{
+        font-size: .5em;
+     }
+}

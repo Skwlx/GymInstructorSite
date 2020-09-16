@@ -13,6 +13,74 @@
     }
 }
 
+@keyframes rotateToXA{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(45deg) scaleY(1.5);
+    }
+}
+
+@keyframes rotateToXB{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(-45deg) scaleY(1.5) translateY(-5px) translateX(10px);
+    }
+}
+
+@keyframes disapear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes displayMenu{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes hideMenu{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-300px);
+    }
+}
+
+
+//HEADER ANIMATION CLASSES
+
+.displayMenu {
+    animation: displayMenu .4s ease-in forwards;
+}
+
+.hideMenu {
+    animation: hideMenu .4s ease-in;
+}
+
+.rotateToXA{
+    animation: rotateToXA .3s ease forwards;
+}
+
+.rotateToXB{
+    animation: rotateToXB .3s ease forwards;
+}
+
+.disapear{
+    animation: disapear .7s ease forwards;
+}
+
 //STYLES
 
 .header{
@@ -48,13 +116,36 @@
     }
 }
 
-
 .title{
     margin: 0;
     width: 200px;
     height: 50px;
     margin-top: -15px;
     padding-left: 5px;
+}
+
+
+.nav-container-burger{
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.nav-container-burger-line{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    border-radius: 10px;
+    &:nth-of-type(2){
+        margin-top: 10px;
+    }
+    &:nth-of-type(3){
+        margin-top: 10px;
+    }
 }
 
 .nav-list{
@@ -94,4 +185,37 @@
 
 .active-nav-item{
     color: #ffffff;
+}
+
+@media (max-width:830px){
+    .nav-container{
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        background-color: lighten($base-color, 20%);
+        transform: translateY(-300px);
+        .nav-list{
+            flex-direction: column;
+            text-align: center;
+            
+            li{
+                padding-top: 50px;
+                &:nth-of-type(1){
+                   padding-top: 70px;
+                }
+            }
+        }
+    }
+    .nav-item::after{
+        width: 100%;
+        left: 0;
+    }
+    .nav-container-burger{
+        display: inline-block;
+    }
+}
+@media(max-width:435px){
+    .header-social-media{
+        display: none;
+    }
 }
