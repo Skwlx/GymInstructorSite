@@ -52,6 +52,9 @@
     p{
         border-bottom: 4px double $base-color;
         padding-bottom: 3px;
+        b, strong{
+            color: darken($base-color,20%);
+        }
     }
     h1,h2,h3,h4,h5{
         border-bottom: 2px solid darken($base-color, 30%);

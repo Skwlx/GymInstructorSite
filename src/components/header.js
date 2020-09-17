@@ -31,6 +31,9 @@ const Header = () => {
         burger.addEventListener('click', () => {
             if(toggle === 0){
             toggle = 1;
+            removeAnimation(0, headerStyles.show);
+            removeAnimation(1, headerStyles.reverseA);
+            removeAnimation(2, headerStyles.reverseB);
             addAnimation(0,headerStyles.disapear);
             addAnimation(1,headerStyles.rotateToXA);
             addAnimation(2,headerStyles.rotateToXB);
@@ -42,6 +45,9 @@ const Header = () => {
                 removeAnimation(0, headerStyles.disapear);
                 removeAnimation(1, headerStyles.rotateToXA);
                 removeAnimation(2, headerStyles.rotateToXB);
+                addAnimation(0, headerStyles.show);
+                addAnimation(1, headerStyles.reverseA);
+                addAnimation(2, headerStyles.reverseB);
                 menu.classList.remove(headerStyles.displayMenu);
                 menu.classList.add(headerStyles.hideMenu);
             }
@@ -59,8 +65,8 @@ const Header = () => {
         <div className={headerStyles.logoContainer}>
         <Link to="/"><img src={Logo}  className={headerStyles.title} alt="Logo"></img></Link>
         <ul className={headerStyles.headerSocialMedia}>
-            <li><a aria-label="link" href="https://www.instagram.com/zielony_trener/"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
-            <li><a aria-label="link" href="https://www.facebook.com/Sebastian__Zielonka-105454837854619/"><FontAwesomeIcon icon={faFacebook} size="2x"/></a></li>
+            <li><a aria-label="link" href="https://www.instagram.com/zielony_trener/"><FontAwesomeIcon icon={faInstagram}/></a></li>
+            <li><a aria-label="link" href="https://www.facebook.com/Sebastian__Zielonka-105454837854619/"><FontAwesomeIcon icon={faFacebook}/></a></li>
         </ul>
         </div>
         <div className={headerStyles.navContainer}>

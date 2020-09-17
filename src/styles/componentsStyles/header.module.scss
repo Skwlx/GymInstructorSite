@@ -58,6 +58,45 @@
     }
 }
 
+@keyframes reverseRotateA{
+    from{
+        transform: rotate(45deg) scaleY(1.5);
+    }
+    to{
+        transform: none;
+    }
+}
+
+@keyframes reverseRotateB{
+    from{
+        transform: rotate(-45deg) scaleY(1.5) translateY(-5px) translateX(10px);
+    }
+    to{
+        transform: none;
+    }
+}
+
+@keyframes apear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes displayMedia{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+        display: none;
+    }
+    to{
+        opacity: 1;
+        display: block;
+        transform: none;
+    }
+}
 
 //HEADER ANIMATION CLASSES
 
@@ -80,6 +119,15 @@
 .disapear{
     animation: disapear .3s ease forwards;
 }
+
+.reverseA{
+    animation: reverseRotateA .3s ease;
+}
+
+.reverseB{
+    animation: reverseRotateB .3s ease;
+}
+
 
 //STYLES
 
@@ -105,11 +153,14 @@
     li{
         margin-right: .6rem;
         margin-left: .6rem;
+        max-width: 36px;
+        max-height: 36px;
     }
     a{
         text-decoration: none;
         color: #000000;
         transition: ease .2s;
+        font-size: 36px;
         &:hover{
             color: #ffffff;
         }
