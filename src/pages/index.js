@@ -1,9 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-
 import indexStyles from "../styles/pagesStyles/index.module.scss";
-
 import PhotoOfMe from "../images/Me.jpg"
+import AliceCarousel from "../components/aliceCarousel";
 
 const IndexPage = () =>{
   return (
@@ -42,7 +41,10 @@ const IndexPage = () =>{
         </p>
         </div>
         </div>
-       
+      </div>
+      <div className={indexStyles.instaFeedContainer}>
+      <h3>INSTAGRAM</h3>
+      <AliceCarousel/>
       </div>
     </Layout>
   )

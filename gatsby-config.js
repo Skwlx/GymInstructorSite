@@ -19,5 +19,11 @@ module.exports = {
         contentTypes: [`article`, `user`],
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `4463750358`,
+      },
+    },
   ],
 }

@@ -4,9 +4,8 @@ import 'aos/dist/aos.css';
 
 import Header from "./header";
 import Footer from "./footer";
-
 import layoutStyles from "../styles/componentsStyles/layout.module.scss";
-import "../styles//index.scss";
+import "../styles/main.scss";
 
 
 const Layout = (props) => {

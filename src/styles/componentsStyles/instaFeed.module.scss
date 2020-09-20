@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+// INSTAFEED STYLES
+
+.insta-feed-container{
+    width: 100%;
+    background-color: $secondary-color;
+    div{
+        min-height: 400px;
+    }
+    ul{
+        text-align: center;
+        padding-bottom: 20px;
+        li{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.insta-feed-container-photo{
+    width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+.insta-feed-container-photo-likes{
+    color: red;
+    margin-right: 5px;
+}
+
+.insta-feed-container-likes-amount{
+    font-size: 1.2rem;
+    color: darken($base-color,20%);
+}
