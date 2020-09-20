@@ -9,7 +9,7 @@ import {
     faHeart
 } from '@fortawesome/free-solid-svg-icons'
 
-const Gallery = () => {
+const Feed  = () => {
   const instaData = useStaticQuery(graphql`
   query {
     allInstaNode(limit: 12) {
@@ -43,21 +43,39 @@ const Gallery = () => {
   const responsive = {
     450: { items: 1 },
     800: {items: 2},
-    1024: { items: 3 },
+    1230: { items: 3 },
     1700: {items: 4}
   }
 return (
-  <AliceCarousel buttonsDisabled={true} dotsDisabled={true} autoPlay={true} infinite={true} autoPlayInterval={1000} responsive={responsive} autoHeight={true}>
+  <div className={feedStyles.instaFeedContainer}>
+  <h3>INSTAGRAM</h3>
+  <AliceCarousel 
+  buttonsDisabled={true} 
+  dotsDisabled={true} 
+  autoPlay={true} 
+  infinite={true} 
+  autoPlayInterval={1000} 
+  responsive={responsive} 
+  autoHeight={true}>
+
   {instaData.allInstaNode.edges.map(edge => {
       return(
         <div>
-        <Img className={feedStyles.instaFeedContainerPhoto} fixed={edge.node.localFile.childImageSharp.fixed} alt={edge.node.caption} key={edge.node.id}/>
-        <p className={feedStyles.instaFeedContainerLikesAmount}><FontAwesomeIcon className={feedStyles.instaFeedContainerPhotoLikes} icon={faHeart}/>{edge.node.likes}</p>
+        <Img 
+        imgStyle={{ objectFit: 'contain' }}
+        className={feedStyles.instaFeedContainerPhoto} 
+        fixed={edge.node.localFile.childImageSharp.fixed} 
+        alt={edge.node.caption} key={edge.node.id}/>
+        <p className={feedStyles.instaFeedContainerLikesAmount}>
+        <FontAwesomeIcon className={feedStyles.instaFeedContainerPhotoLikes} icon={faHeart}/>
+        {edge.node.likes}
+        </p>
         </div>
       )
-  })}
+    })}
   </AliceCarousel>
+  </div>
     )
 }
 
-export default Gallery;
+export default Feed;
