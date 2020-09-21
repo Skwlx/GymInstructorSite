@@ -2,6 +2,18 @@
 
 @import '../variables.scss';
 
+// FEED ANIMATIONS
+
+@keyframes gradientChange{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(-360deg);
+    }
+}
+
 // INSTAFEED STYLES
 
 .insta-feed-container{
@@ -13,32 +25,47 @@
     }
     ul{
         text-align: center;
-        padding-bottom: 20px;
-        li{
-            margin-bottom: 20px;
-        }
     }
+}
+
+.insta-feed-container-title{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #5758a1 0%, #d46d90 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientChange 2s linear infinite;
 }
 
 .insta-feed-container-photo{
     width: 400px;
-    max-height: 400px;
-    margin: auto;
-    border: 1px solid $base-color;
+    height: 400px;
+    border: 2px solid $base-color;
+    border-radius: 10px;
 }
-.insta-feed-container-photo-likes{
+.insta-feed-container-photo-likes,
+.insta-feed-container-photo-comments{
     color: red;
     margin-right: 5px;
 }
 
-.insta-feed-container-likes-amount{
+.insta-feed-container-photo-comments{
+    color: $base-color;
+}
+
+.insta-feed-container-likes-amount,
+.insta-feed-container-comments-amount{
     font-size: 1.2rem;
     color: darken($base-color,20%);
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 @media(max-width:435px){
     .insta-feed-container-photo{
         width: 350px;
-        height: 400px;
+        height: 350px;
+        border: none;
     }
 }

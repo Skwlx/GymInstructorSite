@@ -73,7 +73,7 @@
         color: lighten($base-color, 6%);
         transition: ease .2s;
         &:hover{
-            color:$secondary-color;
+            color:$base-color;
         }
     }
 }
