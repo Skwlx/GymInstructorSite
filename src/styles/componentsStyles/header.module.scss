@@ -135,7 +135,7 @@
 //STYLES
 
 .header{
-    background-color: lighten($base-color, 20%);
+    background-color: lighten($base-color, 24%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -212,7 +212,7 @@
 
 .nav-item {
     color: #000000;
-    text-shadow: 0 2px 3px rgba(150, 150, 150, 0.83);
+    text-shadow: 0 1px 3px rgba(150, 150, 150, 0.33);
     font-size: 1.2rem;
     margin-right: 1.3rem;
     margin-left: 1.3rem;
@@ -228,7 +228,7 @@
     left: 50%;
     bottom: 0;
     margin-bottom: -4px;
-    background-color: #ffffff;
+    background-color: darken($base-color,10%);
     position: absolute;
 }
 
@@ -238,7 +238,7 @@
 }
 
 .active-nav-item{
-    color: #ffffff;
+    color: darken($base-color,10%);
 }
 
 @media (max-width:830px){
@@ -246,7 +246,7 @@
         width: 100%;
         z-index: -1;
         position: absolute;
-        background-color: lighten($base-color, 20%);
+        background-color: lighten($base-color, 28%);
         transform: translateY(-300px);
         .nav-list{
             flex-direction: column;
