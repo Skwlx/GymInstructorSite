@@ -5,7 +5,7 @@
 // TRANSFORMATION STYLES
 
 .transformation-box {
-    background-color: lighten($base-color, 34%);
+    background-color: $base-color;
     display: flex;
     padding-top: 60px;
     justify-content: center;
@@ -21,13 +21,13 @@
     border-radius: 10px;
     position: relative;
     &:nth-of-type(odd){
-        background-color: lighten($base-color, 30%);
+        background-color: lighten($base-color, 4%);
     }
 }
 
 .transformation-content-title{
     font-size: 1.6rem;
-    border-left: 15px solid $base-color;
+    border-left: 15px solid $secondary-color;
     padding-left: 4px;
     margin-left: 20px;
 }
@@ -51,14 +51,14 @@
     padding: 50px;
     padding-bottom: 0;
     p{
-        border-bottom: 4px double $base-color;
+        border-bottom: 4px double $secondary-color;
         padding-bottom: 3px;
         b, strong{
             color: darken($base-color,20%);
         }
     }
     h1,h2,h3,h4,h5{
-        border-bottom: 2px solid darken($base-color, 30%);
+        border-bottom: 2px solid $secondary-color;
         padding-bottom: 5px;
     }
 }

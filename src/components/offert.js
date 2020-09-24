@@ -34,7 +34,7 @@ const Offert = () =>{
                 <p className={offertStyles.offertBoxPrice}>
                 200zł/mies
                 </p>
-                <ul>
+                <ul className={offertStyles.offertBoxList}>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
@@ -51,26 +51,34 @@ const Offert = () =>{
             <p className={offertStyles.offertBoxPrice}>
                 150zł/mies
                 </p>
-                <ul>
+                <ul className={offertStyles.offertBoxList}>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 </ul>
+                <div className={offertStyles.offertBoxContactContent}>
+                <p>Umów wybrany pakiet:</p>
+                <Link to="/contact" className={offertStyles.offertBoxContactButton}>Skontaktuj się</Link>
+                </div>
             </div>
             <div className={offertStyles.offertBox}>
             <h2  className={offertStyles.offertBoxTitle}>Prowadzenie dietetyczno-treningowe</h2>
             <p className={offertStyles.offertBoxPrice}>
                 300zł/mies
                 </p>
-                <ul>
+                <ul className={offertStyles.offertBoxList}>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 <li>1</li>
                 </ul>
+                <div className={offertStyles.offertBoxContactContent}>
+                <p>Umów wybrany pakiet:</p>
+                <Link to="/contact" className={offertStyles.offertBoxContactButton}>Skontaktuj się</Link>
+                </div>
             </div>
             </div>
             <div className={offertStyles.offertSelectBox}>

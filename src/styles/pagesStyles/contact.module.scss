@@ -36,7 +36,7 @@
 //CONTACT STYLES
 
 .contact-container{
-    background-color: lighten($base-color, 34%);
+    background-color: $base-color;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .contact-content{
-    background-color: lighten($base-color, 30%);
+    background-color: darken($base-color, 10%);
     padding: 2rem;
     border-radius: 20px;
 }
@@ -70,10 +70,10 @@
         margin-left: 36px;
     }
     a{
-        color: lighten($base-color, 6%);
+        color: #000000;
         transition: ease .2s;
         &:hover{
-            color:$base-color;
+            color:darken($base-color,25%);
         }
     }
 }
@@ -82,7 +82,7 @@
 
 @media (max-width:830px){
     .contact-content{
-        background-color: lighten($base-color, 34%);
+        background-color: $base-color;
         h2{
             font-size: 1.5rem;
             text-align: center;

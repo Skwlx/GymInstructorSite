@@ -3,7 +3,7 @@
 //ABOUT ME
 
 .about-me-container{
-    background-color: lighten($base-color, 34%);
+    background-color: $secondary-color;
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -43,7 +43,7 @@
 
 .about-me-content-text-important{
     font-weight: 600;
-    color: darken($base-color,10%);
+    color: darken($base-color,40%);
 }
 
 .about-me-photo{
@@ -62,7 +62,7 @@
     position: absolute;
     bottom: 0;
     z-index: 0;
-    fill: $secondary-color;
+    fill: $base-color;
 }
 // ABOUT MEDIA QUERIES
 
