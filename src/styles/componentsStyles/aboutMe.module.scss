@@ -30,6 +30,7 @@
     border-bottom: double 9px $base-color;
     border-top: double 9px $base-color;
     padding: 10px 0 10px 0;
+    font-family: 'Merriweather', serif;
 }
 
 .about-me-content-text{
@@ -39,6 +40,10 @@
     text-align: justify;
     font-weight: 300;
     z-index: 1;
+}
+
+.about-me-content-title, .about-me-content-text{
+    font-family: 'Merriweather', serif;
 }
 
 .about-me-content-text-important{

@@ -24,6 +24,13 @@ module.exports = {
       options: {
         username: `4463750358`,
       },
+      
     },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/transformation/`, `/`, `/contact`],
+      },
+    },    
   ],
 }

@@ -61,6 +61,7 @@ const Header = () => {
             <title>Zielony trener</title>
             <meta name="description" content="Nazywam się Sebastian Zielonka, jestem trenerem Online." />
             <link rel="icon" type="image/png" href={favIcon}/>
+            
         </Helmet>
         <div className={headerStyles.logoContainer}>
         <Link to="/"><img src={Logo}  className={headerStyles.title} alt="Logo"></img></Link>

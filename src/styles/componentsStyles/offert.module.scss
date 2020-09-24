@@ -35,7 +35,7 @@
     margin: 15px;
     &:hover{
         transform: translateY(-20px);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
         .offert-box-title{
             color: white;
         }
@@ -51,6 +51,10 @@
     transition: .3s ease;
     border-bottom: double 9px $base-color;
     border-top: double 9px $base-color;
+}
+
+.offert, .offert-box-title, .offert-holder-title{
+    font-family: 'Nunito', sans-serif;
 }
 
 .offert-box-price{
@@ -89,6 +93,7 @@
     margin-top: 15px;
     h3{
         font-size: 1.7rem;
+        font-family: 'Nunito', sans-serif;
     }
 }
 
