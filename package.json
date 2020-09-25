@@ -1,9 +1,9 @@
 {
-  "name": "sebastian-zielonka-site",
+  "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "Website created for Sebastian Zielonka",
+  "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
-  "license": "ISC",
+  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

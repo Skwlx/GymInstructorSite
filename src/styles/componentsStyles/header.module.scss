@@ -239,7 +239,7 @@
 }
 
 .active-nav-item{
-    color: $secondary-color;
+    color: darken($secondary-color, 50%);
 }
 
 @media (max-width:830px){
