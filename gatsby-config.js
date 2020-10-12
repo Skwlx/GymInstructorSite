@@ -16,7 +16,6 @@ module.exports = {
       options: {
         username: `3604928475`,
       },
-      
     },  
   ],
 }

@@ -7,7 +7,7 @@ import {
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet";
 
-import Logo from "../images/logoS.png";
+import Logo from "../images/LogoS.png";
 
 import headerStyles from "../styles/componentsStyles/header.module.scss";
 
