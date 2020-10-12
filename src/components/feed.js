@@ -13,7 +13,7 @@ import {
 const Feed  = () => {
   const instaData = useStaticQuery(graphql`
   query {
-    allInstaNode(limit: 12) {
+    allInstaNode(limit: 6) {
       edges {
         node {
           id

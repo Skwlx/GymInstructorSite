@@ -11,7 +11,6 @@ import Logo from "../images/logoS.png";
 
 import headerStyles from "../styles/componentsStyles/header.module.scss";
 
-import favIcon from "../images/fav2.ico";
 
 const Header = () => {
 
@@ -58,16 +57,15 @@ const Header = () => {
         <Helmet>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width,initial-scale=1.0" /> 
-            <title>Zielony trener</title>
-            <meta name="description" content="Nazywam się Sebastian Zielonka, jestem trenerem Online." />
-            <link rel="icon" type="image/png" href={favIcon}/>
+            <title>Gym instructor</title>
+            <meta name="description" content="Page about gym instructor" />
             
         </Helmet>
         <div className={headerStyles.logoContainer}>
         <Link to="/"><img src={Logo}  className={headerStyles.title} alt="Logo"></img></Link>
         <ul className={headerStyles.headerSocialMedia}>
-            <li><a aria-label="link" href="https://www.instagram.com/zielony_trener/"><FontAwesomeIcon icon={faInstagram}/></a></li>
-            <li><a aria-label="link" href="https://www.facebook.com/Sebastian__Zielonka-105454837854619/"><FontAwesomeIcon icon={faFacebook}/></a></li>
+            <li><a aria-label="link" href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
+            <li><a aria-label="link" href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
         </ul>
         </div>
         <div className={headerStyles.navContainer}>

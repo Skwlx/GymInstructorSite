@@ -35,10 +35,11 @@
 }
 
 .transformation-content-image{
-    width: 500px;
-    height: 600px;
-    margin: auto;
     border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .transformation-content-box{

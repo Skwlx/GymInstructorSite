@@ -30,28 +30,28 @@ const Contact = () =>{
           <h2>Masz pytanie? Chcesz się umówić? Skontaktuj się!<span role="img" aria-label="emoji-Finger">👇</span></h2>
           <ul className={contactStyles.contactList}>
             <li className={contactStyles.contactListElement}>
-            <a aria-label="link" target="_blank" rel="noreferrer" href="https://www.facebook.com/Sebastian__Zielonka-105454837854619/">
+            <a aria-label="link" rel="noreferrer" href="#">
               <FontAwesomeIcon icon={faFacebook} size="3x"/>
             </a>
             <span>Napisz wiadomość przez Facebook'a.</span>
             </li>
             <li className={contactStyles.contactListElement}>
-              <a aria-label="link" target="_blank" rel="noreferrer" href="https://www.instagram.com/zielony_trener/">
+              <a aria-label="link" rel="noreferrer" href="#">
                 <FontAwesomeIcon icon={faInstagram} size="3x"/>
               </a>
               <span className={contactStyles.brokenSpan}>Zajrzyj na Instagrama.</span>
             </li>
             <li className={contactStyles.contactListElement}>
-              <a href="tel:+48 534 304 262">
+              <a href="#">
                 <FontAwesomeIcon icon={faPhoneAlt} size="3x"/>
               </a>
-              <span>Zadzwoń (+48 534 304 262).</span>
+              <span>Zadzwoń.</span>
             </li>
             <li className={contactStyles.contactListElement}>
-              <a href="mailto:sebastianzielonka32@gmail.com" aria-label="Wyslij email">
+              <a href="mailto:skwlx.xx@o2.pl" aria-label="Wyslij email">
                 <FontAwesomeIcon icon={faEnvelope} size="3x"/>
               </a>
-              <span>Wyślij maila (sebastianzielonka32@gmail.com).</span>
+              <span>Wyślij maila.</span>
             </li>
             </ul>
         </div>

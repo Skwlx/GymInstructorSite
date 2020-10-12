@@ -6,9 +6,9 @@ const Jumbotron = () => {
     return (
         <div className={jumboStyles.jumbotron}>
         <div className={jumboStyles.jumbotronContent}>
-          <h3>Sebastian Zielonka</h3>
+          <h3>Gym Instructor</h3>
           <p>
-          Razem zmienimy twoją sylwetkę
+          Zmień swoją sylwetkę
           </p>
         </div>
       </div>

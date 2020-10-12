@@ -12,25 +12,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000,
-        contentTypes: [`article`, `user`],
-      },
-    },
-    {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `4463750358`,
+        username: `3604928475`,
       },
       
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/transformation/`, `/`, `/contact`],
-      },
-    },    
+    },  
   ],
 }
